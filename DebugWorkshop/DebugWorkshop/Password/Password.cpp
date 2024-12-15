@@ -12,9 +12,10 @@ struct Password
 int main()
 {
 	std::cout << "Enter your password to continue:" << std::endl;
-	Password pwd;
-	std::cin >> pwd.value;
+	Password pwd; 
+	std::cin >> pwd.value; 
 
+	// only checks until 8th charecter
 	if (!strcmp(pwd.value, "********"))
 		pwd.incorrect = false;
 
