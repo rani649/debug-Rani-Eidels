@@ -8,7 +8,8 @@ private:
 	float _perimeter;
 
 public:
-	Shape();
+	Shape(); 
+	virtual ~Shape();
 	virtual float get_area() const;
 
 };

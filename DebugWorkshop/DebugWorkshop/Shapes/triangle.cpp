@@ -4,14 +4,14 @@
 
 Triangle::Triangle(float base, float height) : _base(base), _height(height)
 {
+} 
+
+Triangle::~Triangle()
+{
+
 }
 
-float Triangle::get_area(bool has_depth) const
+float Triangle::get_area() const
 {
-	if (has_depth)
-	{
-		throw std::exception("3D triangle is not implemented yet!");
-	}
-
 	return float(0.5 * _base * _height);
 }
