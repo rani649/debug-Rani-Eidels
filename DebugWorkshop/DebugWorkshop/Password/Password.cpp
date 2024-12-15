@@ -15,7 +15,7 @@ int main()
 	Password pwd; 
 	std::cin >> pwd.value; 
 
-	// only checks until 8th charecter
+	// you need to enter 16 chars
 	if (!strcmp(pwd.value, "********"))
 		pwd.incorrect = false;
 
