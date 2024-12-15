@@ -8,8 +8,9 @@ int main()
 
 	std::cout << "what is the size of the series? ";
 	std::cin >> size;
-
-	while (size >= 0)
+	
+	// changed because size is unsinged cant be -1
+	while (size > 0)
 	{
 		std::cout << t1 << ", ";
 
